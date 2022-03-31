@@ -9,6 +9,8 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { getCategories } from '../services';
 
+import MagicRainbowButton from './MagicRainbowButton';
+
 
 const Footer = () => {
   const [categories, setCategories] = useState([]);
@@ -130,6 +132,9 @@ const navigation = {
               </div>
             ))}
           </nav>
+
+          <MagicRainbowButton>  Continue Reading  </MagicRainbowButton>
+
           <div className="mt-8 flex justify-center space-x-6">
             {navigation.social.map((item) => (
               <a key={item.name} href={item.href} target="_blank" className="text-gray-400 hover:text-gray-500">

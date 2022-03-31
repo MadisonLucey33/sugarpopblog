@@ -20,13 +20,13 @@ const paletteSize = rainbowColors.length;
 const useRainbow = ({ intervalDelay = 2000 }) => {
   // Register all custom properties.
   // This only ever needs to be done once, so there are no dependencies.
-
+  const { current: uniqueId } = React.useRef(generateId());
   
   useEffect(() => {
     for (let i = 0; i < 3; i++) {
       try {
         CSS.registerProperty({
-          name: `--magic-rainbow-color-${i}`,
+          name: `--magic-rainbow-color-${uniqueid}-${index}`,
           initialValue: rainbowColors[i],
           syntax: '<color>',
           inherits: false,
