@@ -39,7 +39,9 @@ const useRainbow = ({ intervalDelay = 2000 }) => {
   // Get an ever-incrementing number from another custom hook*
   const intervalCount = useIncrementingNumber(intervalDelay);
   // Using that interval count, derive each current color value
+ 
   return {
+    
     '--magic-rainbow-color-0': rainbowColors[(intervalCount + 1) % paletteSize],
     '--magic-rainbow-color-1': rainbowColors[(intervalCount + 2) % paletteSize],
     '--magic-rainbow-color-2': rainbowColors[(intervalCount + 3) % paletteSize],

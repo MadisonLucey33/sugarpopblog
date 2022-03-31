@@ -12,8 +12,7 @@ const MagicRainbowButton = ({
 
   const colors = useRainbow({ intervalDelay });
 
-  const colorKeys = Object.keys(colors);
-
+  const colorKeys = Object.keys(colors); // i think this is the source
   return (
     <ButtonElem 
       {...delegated}
@@ -32,6 +31,7 @@ const MagicRainbowButton = ({
             var(${colorKeys[0]})
           )
         `,
+       
       }}
     >
       {children}
