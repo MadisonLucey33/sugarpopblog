@@ -133,7 +133,7 @@ const navigation = {
             ))}
           </nav>
 
-          <MagicRainbowButton>  Continue Reading  </MagicRainbowButton>
+          <MagicRainbowButton children="Continue Reading "/>  
 
           <div className="mt-8 flex justify-center space-x-6">
             {navigation.social.map((item) => (

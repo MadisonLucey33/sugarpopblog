@@ -37,7 +37,8 @@ const useRainbow = ({ intervalDelay = 2000 }) => {
 
   const isEnabled = hasBrowserSupport && prefersReducedMotion.matches;
 
-  const { current: uniqueId } = React.useRef(generateId());
+ // const { current: uniqueId } = React.useRef(generateId());
+ const uniqueId= "hello";
 
   // Register all custom properties
   React.useEffect(() => {
